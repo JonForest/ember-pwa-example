@@ -1,0 +1,10 @@
+<h1>Results</h1>
+<p>These are some results</p>
+
+<div class="results">
+  {{#each @worksites as |worksite|}}
+    <span role="button" {{action @onClick worksite}}>
+      <WorksiteResult @worksite={{worksite}} />
+    </span>
+  {{/each}}
+</div>
